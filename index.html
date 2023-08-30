@@ -7,34 +7,32 @@
     <link rel="stylesheet" href="styles/style.css" type="text/css">
 </head>
 <body>
-    <h1>Tareas Interactivas</h1>
     <script src="bundle.js"></script>
-
-    <form action="/src/components/createTask.js">
-        <label for="tName">Task name:</label><br>
-        <input type="text" name="tName" id="tName"><br><br>
-        <label for="tDescription">Task description:</label><br>
-        <input type="text" name="tDescription" id="tDescription"><br><br>
-        <input type="submit" value="Create">
-    </form>
-
-<br><br>
-
-    <button id="deleteButton">Delete</button>
-    <br>
-    <table id="taskTable" border="1" style="width: 100%;">
-        <tr>
-            <th></th>    
-            <th style="text-align: center;">Id</th>
-            <th style="text-align: center;">Name</th>
-            <th style="text-align: center;">Description</th>
-            <th style="text-align: center;">Status</th>
-        </tr>
-    </table>
-    <br>
-    <button class="status-button" data-status="Completed">Completed</button>
-    <button class="status-button" data-status="In progress">In progress</button>
-    <button class="status-button" data-status="Pending">Pending</button>
-
+    <div class="container">
+        <h1>Tareas Interactivas</h1>
+        <form action="/src/components/createTask.js">
+            <label for="tName">Task name:</label><br>
+            <input type="text" name="tName" id="tName"><br><br>
+            <label for="tDescription">Task description:</label><br>
+            <input type="text" name="tDescription" id="tDescription"><br><br>
+            <input type="submit" value="Create">
+        </form>
+    <br><br>
+        <button id="deleteButton">Delete</button>
+        <br>
+        <table id="taskTable">
+            <tr>
+                <th></th>    
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Status</th>
+            </tr>
+        </table>
+        <br>
+        <button class="status-button" data-status="Completed">Completed</button>
+        <button class="status-button" data-status="In progress">In progress</button>
+        <button class="status-button" data-status="Pending">Pending</button>
+    </div>
 </body>
 </html>
